@@ -1,0 +1,260 @@
+*{
+    font-family: 'Lemon', serif;
+    background-color: black;
+    color: white;
+
+}
+.searchbox{
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px white;
+    height: 50px;
+    width: 300px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 250px;
+    height: 50px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 2px 4px teal;
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+button{
+    width: 52px;
+    height: 52px;
+    background-color: black;
+    border: 1px solid aqua;
+    box-shadow: 0px 2px 4px teal;
+    border-radius: 0 20px 20px 0;
+    margin-top: 10px;
+    font-size: larger;
+
+}
+i{
+    color: aqua;
+ 
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+.tile{
+    position: relative;
+    top: 420px;
+    box-shadow: 0px 8px 16px aqua;
+    width: 380px;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid teal;
+    border-radius: 20px;
+    
+}
+form i{
+    margin-left: 0px;
+   
+
+}
+
+.onofbtn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 1;
+    box-shadow: 0px 2px 4px teal;
+   
+}
+body{
+    background-image: url("bg.png");
+    height: 100vh;
+    background-size: cover;
+}
+.dim{
+    opacity: 0.3;
+}
+.apc{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 126px;
+    left: 763px;
+    z-index: -1;
+}
+.mail{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: -20px;
+    left: 130px;
+}
+@keyframes jump{
+    0%{
+        top: 700px;
+    }
+    100%{
+        top: 420px;
+    }
+}
+@keyframes jump3{
+    0%{
+        top: 700px;
+    }
+    100%{
+        top: 180px;
+    }
+}
+.load{
+    animation-duration: 1s;
+    animation-name: jump;
+}
+.wlc{
+    
+    width: 450px;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    left: 525px;
+    top: 10px;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    box-shadow: 0px 4px 8px aqua;
+}
+@keyframes jump2{
+    0%{
+        top: -700px;
+    }
+    100%{
+        top: 10px;
+    }
+}
+@keyframes ghumo{
+    0%{
+        transform: rotate(0deg);
+    }
+    12%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    37%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+
+    }
+    63%{
+        transform: rotate(215deg);
+    }
+    75%{
+        transform: rotate(270deg);
+
+    }
+    87%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.load2{
+    animation-duration: 1s;
+    animation-name: jump2;
+}
+.load3{
+    animation-duration: 2s;
+    animation-name: jump3;
+}
+.rotate{
+    animation-duration: 1.2s;
+    animation-name: ghumo, easeout;
+    animation-iteration-count: infinite;
+}
+.time{
+    
+    
+    height: 70px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.028);
+    color: aqua;
+   
+}
+.box{
+    position: absolute;
+    top: 350px;
+    left: 80px;
+    padding: 10px;
+    border: 1px solid teal;
+    border-top: 4px solid teal;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.113);
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotating {
+    border: 1px solid teal; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: rotate 2s linear infinite;
+    position: absolute;
+    left: 1035px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stage{
+    border: 0;
+    position: absolute;
+    top: 180px;
+    left: 1100px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.stage img{
+    height: 100px;
+    width: 350px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+
+}
+#model{
+    height: 450px;
+    width: 240px;
+}
+.off{
+    display: none;
+}
